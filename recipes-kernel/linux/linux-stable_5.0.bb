@@ -12,7 +12,7 @@ LINUX_VERSION_EXTENSION = "-embtom"
 
 S = "${WORKDIR}/git"
 
-SRCREV = "064acf371a512e4ab3bc82fd5c8245b370d11afa"
+SRCREV = "153a3b89c44b913b1e751ff395c8b5b8a938564e"
 
 
 SRC_URI = " \ 
