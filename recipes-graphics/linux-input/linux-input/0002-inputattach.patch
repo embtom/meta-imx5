@@ -1,0 +1,12 @@
+--- a/inputattach.c_old	2019-03-10 12:53:36.000000000 +0100
++++ b/inputattach.c	2019-03-10 21:34:35.114285070 +0100
+@@ -718,6 +718,9 @@
+ };
+ 
+ static struct input_types input_types[] = {
++{ "--embtom","--embtom","Embtom touch",
++    B115200, CS8,
++    SERIO_EMBTOM,   	0x00,	0x00,	0,	NULL },    
+ { "--sunkbd",		"-skb",		"Sun Type 4 and Type 5 keyboards",
+ 	B1200, CS8,
+ 	SERIO_SUNKBD,		0x00,	0x00,	1,	NULL },

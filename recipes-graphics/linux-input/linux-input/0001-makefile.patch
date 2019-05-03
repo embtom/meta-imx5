@@ -1,0 +1,12 @@
+--- a/Makefile_old	2019-03-10 20:26:26.428940873 +0100
++++ b/Makefile	2019-03-11 22:32:49.812886599 +0100
+@@ -27,8 +27,7 @@
+ 
+ CFLAGS		?= -g -O2 -Wall
+ 
+-PROGRAMS	= inputattach jstest jscal fftest ffmvforce ffset \
+-		  ffcfstress jscal-restore jscal-store evdev-joystick
++PROGRAMS	= inputattach
+ 
+ PREFIX          ?= /usr/local
+ 

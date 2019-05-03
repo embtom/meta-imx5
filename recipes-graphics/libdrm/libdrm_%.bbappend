@@ -1,0 +1,1 @@
+PACKAGECONFIG = "libkms freedreno install-test-programs"

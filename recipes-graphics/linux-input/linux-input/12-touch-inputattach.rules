@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="ttymxc1", RUN+="/usr/sbin/inputattach --daemon --embtom /dev/%k"
