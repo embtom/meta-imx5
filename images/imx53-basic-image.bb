@@ -20,14 +20,21 @@ IMAGE_INSTALL += " \
     libdrm-tests \
     mesa-megadriver \
     libegl-mesa \
-    libgl-mesa \
     libgles1-mesa \
     libgles2-mesa \
     libgbm \
     libglapi \
-    mesa-demos \
     haveged \
     "
+IMAGE_INSTALL += "\
+    qtbase \
+    qtbase-plugins \
+    qtsvg \
+    qtsvg-plugins \
+    qtdeclarative \
+    qtdeclarative-plugins \
+    qtdeclarative-qmlplugins \
+    qtquickcontrols-qmlplugins"
 
 TOOLCHAIN_TARGET_TASK_append = " \
     libegl-mesa-dev \
@@ -38,5 +45,3 @@ TOOLCHAIN_TARGET_TASK_append = " \
     libglapi-dev"
     
 
-
-REQUIRED_DISTRO_FEATURES = "x11"
