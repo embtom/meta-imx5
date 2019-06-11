@@ -1,1 +1,1 @@
-PACKAGECONFIG = "libkms freedreno install-test-programs"
+PACKAGECONFIG = "libkms udev freedreno install-test-programs"

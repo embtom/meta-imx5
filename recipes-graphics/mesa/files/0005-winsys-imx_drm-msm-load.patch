@@ -1,0 +1,11 @@
+diff -ruN a/mesa-19.0.3/src/gallium/targets/dri/target.c b/mesa-19.0.3/src/gallium/targets/dri/target.c
+--- a/src/gallium/targets/dri/target.c	2019-04-24 19:40:00.000000000 +0200
++++ b/src/gallium/targets/dri/target.c	2019-05-28 22:20:01.119370152 +0200
+@@ -63,6 +63,7 @@
+ #endif
+ 
+ #if defined(GALLIUM_FREEDRENO)
++DEFINE_LOADER_DRM_ENTRYPOINT(imx_drm)
+ DEFINE_LOADER_DRM_ENTRYPOINT(msm)
+ DEFINE_LOADER_DRM_ENTRYPOINT(kgsl)
+ #endif
