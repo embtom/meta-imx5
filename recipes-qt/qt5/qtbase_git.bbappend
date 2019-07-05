@@ -11,9 +11,6 @@ PACKAGECONFIG_DEFAULT_remove = " tests"
 
 QT_CONFIG_FLAGS_append = " -tslib -qpa eglfs"
 
-#disable webkit build
-PACKAGECONFIG_remove_pn-qttools = "qtwebkit"
-PACKAGECONFIG_remove_pn-qtquick1 = "qtwebkit"
 
 #install environment variables
 do_install_append() {
