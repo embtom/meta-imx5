@@ -34,7 +34,8 @@ IMAGE_INSTALL += "\
     qtdeclarative \
     qtdeclarative-plugins \
     qtdeclarative-qmlplugins \
-    qtquickcontrols-qmlplugins"
+    qtquickcontrols-qmlplugins \
+    qtgraphicaleffects"
 
 TOOLCHAIN_TARGET_TASK_append = " \
     libegl-mesa-dev \
@@ -44,4 +45,9 @@ TOOLCHAIN_TARGET_TASK_append = " \
     libgbm-dev \
     libglapi-dev"
     
+TOOLCHAIN_TARGET_TASK_remove="qtwebkit qtwebkit-dev"
+TOOLCHAIN_HOST_TASK_remove  ="qtwebkit qtwebkit-dev"
+PACKAGECONFIG_remove_pn-qttools = "qtwebkit qtwebkit-dev"
+PACKAGECONFIG_remove_pn-qtquick1 = "qtwebkit qtwebkit-dev"
+PACKAGECONFIG_remove_pn-qtbase = "qtwebkit qtwebkit-dev"
 
