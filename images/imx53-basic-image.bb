@@ -1,5 +1,6 @@
 SUMMARY = "A very basic imx53 basic image"
 
+inherit uboot-fitimage
 include recipes-core/images/core-image-minimal.bb
 
 #IMAGE_FEATURES += "splash x11-base"
